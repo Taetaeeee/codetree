@@ -6,13 +6,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        for(int i=n;i<=100;i+=n){
-            if(i>=n*6){
-                break;
-            }
-            else{
+        for(int i=n;i<=n*5;i+=n){
                 System.out.print(i+" ");
-            }
         }
     }
 }
