@@ -5,6 +5,7 @@ public class Main {
         // Please write your code here.
       Scanner sc = new Scanner(System.in);  
       int num;
+        num = sc.nextInt();
 
         while(sc.hasNextInt()){
             num = sc.nextInt();
