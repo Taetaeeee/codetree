@@ -9,14 +9,11 @@ public class Main {
         int cnt_w = 0;
         int cnt_b = 0;
         
-        for(int i=0;i<d;i++){
+        for(int i=1;i<=d;i++){
             if(i%2==0&&i%3==0&&i%12==0){
                 cnt_b++;
             }
-            else if(i%2==0&&i%12==0){
-                cnt_b++;
-            }
-            else if(i%3==0&&i%12==0){
+            else if((i%2==0&&i%12==0) || (i%3==0&&i%12==0)){
                 cnt_b++;
             }
             else if(i%2==0&&i%3==0){
