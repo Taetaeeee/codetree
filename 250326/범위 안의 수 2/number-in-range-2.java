@@ -6,10 +6,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int sum = 0;
         int cnt = 0;
+        int n = 0;
         double avg = 0;
 
         for(int i=0;i<10;i++){
-            int n = sc.nextInt();
+            n = sc.nextInt();
 
             if(n>=0 && n<=200){
                 sum+=n;
@@ -18,6 +19,6 @@ public class Main {
         }
         avg = (double)sum/cnt;
 
-        System.out.printf("%d %1.f", sum, avg);
+        System.out.printf("%d %.1f", sum, avg);
     }
 }
