@@ -5,14 +5,14 @@ public class Main {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
         int a;
-        int sum = 0;
+        double sum = 0;
         int cnt = 0;
 
         while(true){
             a = sc.nextInt();
 
-            if(a>=30){
-                System.out.printf("%.2f", (double)sum/cnt);
+            if(a>=30 || a<20){
+                System.out.printf("%.2f", sum/cnt);
                 break;
             }
 
