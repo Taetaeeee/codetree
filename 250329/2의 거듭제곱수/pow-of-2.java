@@ -8,16 +8,15 @@ public class Main {
         int pow = 1;
         int cnt = 0;
 
-        while(true){
             for(int i=1;i<=10;i++){
-                for(int j=1;j<=i;j++){
-                    pow*=2;
-                }
-                if(n==pow){
-                    System.out.print(i);
+                if(n%2==1 || n==0){
                     break;
                 }
+                if(n%2==0){
+                    n/=2;
+                    cnt++;
+                }
             }
-        }
+        System.out.print(cnt);
     }
 }
