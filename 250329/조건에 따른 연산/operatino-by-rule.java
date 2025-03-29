@@ -18,7 +18,7 @@ public class Main {
                     n = n*3 + 1;
                     cnt++;
                 }
-                if(n%2==1){
+                else if(n%2==1){
                     n = n*2 + 2;
                     cnt++;
                 }
