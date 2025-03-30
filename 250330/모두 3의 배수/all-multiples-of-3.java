@@ -9,7 +9,7 @@ public class Main {
 
         for(int i=0;i<5;i++){
             n = sc.nextInt();
-            if(n%3==1){
+            if(n%3!=0){
                 judge = true;
             }
         }
