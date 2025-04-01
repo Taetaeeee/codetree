@@ -11,7 +11,7 @@ public class Main {
         for(int i=0;i<10;i++){
             arr[i] = sc.nextInt();
 
-            if(i==0 || i%2==0){
+            if(i%2==0){
                 odd+=arr[i];
             }
             else{
