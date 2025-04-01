@@ -4,11 +4,10 @@ public class Main {
     public static void main(String[] args) {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
-        String[] arr = new String[10];
+        char[] arr = new char[10];
 
         for(int i=0;i<10;i++){
-            String s = sc.next();
-            arr[i]= s;
+            arr[i]= sc.next().charAt(0);
         }
         System.out.print(arr[1] + " " + arr[4] + " "+ arr[7]);
     }
