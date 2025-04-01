@@ -6,14 +6,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int cnt = 0;
         int [] arr = new int[100];
+        int sum = 0;
+        int j = 0;
 
-        for(int i=0;i<100;i++){
+        while(sc.hasNextInt()){
             int n = sc.nextInt();
-            arr[i] = n;
+            arr[j] = n;
+            j++;
         }
 
-        int sum = 0;
-        for(int i=0;i<100;i++)
+        for(int i=0;i<j;i++)
         {
             if(arr[i]==0){
                 cnt = i;
