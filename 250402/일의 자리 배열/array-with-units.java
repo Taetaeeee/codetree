@@ -9,7 +9,7 @@ public class Main {
         arr[0] = sc.nextInt();
         arr[1] = sc.nextInt();
 
-        for(int i=3;i<10;i++){
+        for(int i=2;i<10;i++){
             int n = arr[i-1] + arr[i-2];
             if(n>=10){
                 arr[i] = n%10;
