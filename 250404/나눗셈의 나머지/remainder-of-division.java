@@ -20,7 +20,7 @@ public class Main {
             }
         }
 
-        for(int i=0;i<9;i++){
+        for(int i=0;i<10;i++){
             sum = sum + arr[i] * arr[i];
         }
         System.out.print(sum);
