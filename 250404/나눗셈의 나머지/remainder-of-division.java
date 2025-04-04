@@ -10,14 +10,10 @@ public class Main {
         int sum = 0;
         int temp = 0;
 
-        while(true){
+        while(a>1){
             temp = a%b;
             a = a/b;
             arr[temp]++;
-
-            if(a ==0){
-                break;
-            }
         }
 
         for(int i=0;i<10;i++){
