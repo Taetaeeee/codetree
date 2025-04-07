@@ -7,7 +7,7 @@ public class Main {
         int n = sc.nextInt();
         int q = sc.nextInt();
         int[] arr = new int[n];
-        int cnt = 0;
+        int cnt = -1;
 
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
@@ -24,11 +24,11 @@ public class Main {
                 for(int j=0;j<n;j++){
                     if(arr[j]==b){
                         System.out.println(j+1);
-                        cnt++;
+                        cnt = 1;
                         break;
                     }
                 }
-                if(cnt==n){
+                if(cnt==-1){
                     System.out.println("0");
                 }
             }
