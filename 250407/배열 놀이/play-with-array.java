@@ -7,7 +7,6 @@ public class Main {
         int n = sc.nextInt();
         int q = sc.nextInt();
         int[] arr = new int[n];
-        int cnt = -1;
 
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
@@ -15,6 +14,7 @@ public class Main {
 
         for(int i=0;i<q;i++){
             int q1 = sc.nextInt();
+            int cnt = -1;
             if(q1 == 1){
                 int a = sc.nextInt();
                 System.out.println(arr[a-1]);
