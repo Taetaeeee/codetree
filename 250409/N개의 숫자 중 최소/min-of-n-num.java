@@ -9,10 +9,12 @@ public class Main {
         int min_cnt = 0;
 
         int [] arr = new int[n];
+        arr[0] = sc.nextInt();
+        min_num = arr[0];
 
-        for(int i=0;i<n;i++){
+        for(int i=1;i<n;i++){
             arr[i] = sc.nextInt();
-            if(min_num>=arr[i]){
+            if(min_num>arr[i]){
                 min_num = arr[i];
             }
         }
