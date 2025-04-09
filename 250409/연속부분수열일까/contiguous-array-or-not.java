@@ -26,12 +26,16 @@ public class Main {
                         cntb++;
                     }
                 }
+            if(cntb == bn){
+                System.out.print("Yes");
+                break;
+            }
+            else{
+                cntb = 0;
+            }
             }
         }
-        if(cntb == bn){
-            System.out.print("Yes");
-        }
-        else{
+        if(cntb == 0){
             System.out.print("No");
         }
     }
