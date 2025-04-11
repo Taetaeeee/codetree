@@ -4,12 +4,13 @@ public class Main {
     public static void main(String[] args) {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int min = n;
-        int max = n;
+        int[] arr = new int[100];
+        arr[0] = sc.nextInt();
+        int min = arr[0];
+        int max = arr[0];
 
         while(true){
-            int n1 = sc.nextInt();
+            int n = sc.nextInt();
             
             if(n==999||n==-999){
                 break;
