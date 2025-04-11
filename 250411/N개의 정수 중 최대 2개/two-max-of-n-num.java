@@ -5,18 +5,18 @@ public class Main {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] arr = new int[n+1];
+        int[] arr = new int[n];
         int temp;
 
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
         for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                if(arr[j]<arr[j+1]){
-                    temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+            for(int j=i+1;j<n;j++){
+                if(arr[i]<arr[j]){
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
                 }
             }
         }
