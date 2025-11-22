@@ -11,6 +11,6 @@ public class Main {
             sum+=arr[i];
         }
         double avg = (double)sum/8;
-        System.out.println("%.1f", avg);
+        System.out.printf("%.1f", avg);
     }
 }
