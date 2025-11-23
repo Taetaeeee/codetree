@@ -19,11 +19,12 @@ public class Main {
                 if(arr[i]>arr[max_idx])
                     max_idx = i;
             }
-            System.out.print(max_idx+1," ");
+            System.out.print((max_idx+1) +" ");
 
             if(max_idx == 0)
                 break;
 
             pred_max_idx = max_idx;
         }
+    }
 }
