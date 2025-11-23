@@ -30,7 +30,7 @@ public class Main {
                 }
             }
             if(result){
-                System.out.println("YES");
+                System.out.println("Yes");
                 System.exit(0);
             }
         }
