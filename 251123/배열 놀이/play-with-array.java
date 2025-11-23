@@ -12,7 +12,6 @@ public class Main {
         }
 
         int q, a, b, s, e;
-        int idx = -1;
         for(int i=0;i<Q;i++){
             q = sc.nextInt();
             if(q==1){
@@ -21,6 +20,7 @@ public class Main {
             }
             else if(q==2){
                 b = sc.nextInt();
+                int idx = -1;
                 for(int j=0;j<N;j++){
                     if(arr[j]==b){
                         idx = j;
