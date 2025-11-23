@@ -27,10 +27,7 @@ public class Main {
                         break;
                     }
                 }
-                if(idx==-1)
-                    System.out.println("0");
-                else
-                    System.out.println(idx+1);
+                System.out.println(idx+1);
             }
             else if(q==3){
                 s = sc.nextInt();
