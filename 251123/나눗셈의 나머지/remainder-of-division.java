@@ -7,11 +7,9 @@ public class Main {
         int B = sc.nextInt();
         int [] arr = new int[10];
 
-        while(true){
+        while(A>1){
             arr[A%B]++;
             A/=B;
-            if(A==0)
-                break;
         }
 
         int sum = 0;
