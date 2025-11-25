@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        // Please write your code here.
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+        int [][] arr2d = new int[N][M];
+
+        int num = 1;
+        for(int i=0;i<N;i++){
+            for(int j=0;j<M;j++){
+                arr2d[i][j] = num;
+                System.out.print(arr2d[i][j] + " ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
