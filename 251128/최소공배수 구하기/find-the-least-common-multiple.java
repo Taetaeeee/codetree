@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void find(int n, int m){
-        int find = 1;
+        int find_1 = 1;
         int min;
         
         if(n>m)
@@ -12,9 +12,9 @@ public class Main {
 
         for(int i=1;i<=min;i++){
             if(n%i==0 && m%i==0)
-                find*=i;
+                find_1*=i;
         }
-        System.out.print(find);
+        System.out.print(find_1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
