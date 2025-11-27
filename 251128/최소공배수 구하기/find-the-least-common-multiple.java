@@ -12,9 +12,10 @@ public class Main {
 
         for(int i=1;i<=min;i++){
             if(n%i==0 && m%i==0)
-                find_1*=i;
+                find_1=i;
         }
-        System.out.print(find_1);
+        
+        System.out.print((n*m)/find_1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
