@@ -5,10 +5,12 @@ public class Main {
 
         boolean istrue = true;
         for(int i=0;i<len;i++){
-            if(s.charAt(i)==s.charAt(len-i))
-            else
+            if(s.charAt(i)==s.charAt(len-i-1)){
+
+            }
+            else{
                 istrue=false;
-            
+            }
         }
 
         return istrue;
