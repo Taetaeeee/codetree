@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static int mininum(int a, int b, int c){
-        int min;
+        int min = 0;
         
         if(a>b && b<c)
             min = b;
