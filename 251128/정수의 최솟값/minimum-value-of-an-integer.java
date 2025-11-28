@@ -2,16 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static int mininum(int a, int b, int c){
-        int min = 0;
+        int minval = a;
         
-        if(a>b && b<c)
-            min = b;
-        if(a>c && c<b)
-            min = c;
-        if(b>a && a<c)
-            min = a;
+        if(minval>b)
+            minval = b;
+        if(minval>c)
+            minval = c;
 
-        return min;
+        return minval;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
