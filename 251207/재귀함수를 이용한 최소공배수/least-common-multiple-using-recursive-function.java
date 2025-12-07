@@ -1,13 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-    public static int gcd(int[] arr){
-        int result = arr[0];
-        for(int i=1;i<arr.length;i++){
-            result = gcd(result, arr[i]);
-        }
-        return result;
-    }
     public static int gcd(int a, int b){
         if(b==0)
             return a;
