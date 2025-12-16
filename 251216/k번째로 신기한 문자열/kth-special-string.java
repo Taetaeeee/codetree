@@ -6,7 +6,7 @@ public class Main {
         int count = 0;
         for(int i=0;i<n;i++){
             String w = words[i];
-            if(w.indexOf(t)!=-1){
+            if(w.indexOf(t, 0)!=-1){
                 Twords[count] = words[i];
                 count++;
             }
