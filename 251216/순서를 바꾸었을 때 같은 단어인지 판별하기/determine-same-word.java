@@ -10,11 +10,10 @@ public class Main {
         if(w1.length() != w2.length()){
             issame = false;
         }
-        for(int i=0;i<w1.length()-1;i++){
-            if(w1.charAt(i)!= w2.charAt(i))
-                issame = false;
+        if(w1.equals(w2)==false){
+            issame = false;
         }
-        
+
         if(issame==true){
             System.out.print("Yes");
         }
