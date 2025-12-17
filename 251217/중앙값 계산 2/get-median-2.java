@@ -5,6 +5,7 @@ public class Main {
     public static int [] arr1 = new int[100];
     public static void sortint(int i){
         Arrays.sort(arr1, 0, i+1);
+        // Arrays.sort(arr, fromIndex, toIndex)는 fromIndex 포함, toIndex 미포함 범위
         int n = i/2;
 
         System.out.print(arr1[n] + " ");
