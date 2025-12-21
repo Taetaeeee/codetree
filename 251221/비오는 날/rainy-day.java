@@ -26,11 +26,19 @@ public class Main {
 
         int rainidx = 0;
         for(int i=1;i<n;i++){
-            if(predict1[i].weather.equals("Rain") && predict1[i].date.compareTo(predict1[rainidx].date)>0){
+            if(predict1[i].weather.equals("Rain")){
                 rainidx = i;
                 break;
             }
         }
+
+        for(int i=rainidx+1;i<n;i++){
+            if(predict1[i].weather.equals("Rain") && predict1[i].date.compareTo(predict1[rainidx].date)<0){
+                rainidx = i;
+                break;
+            }
+        }
+
 
         System.out.print(predict1[rainidx].date + " ");
         System.out.print(predict1[rainidx].day + " ");
