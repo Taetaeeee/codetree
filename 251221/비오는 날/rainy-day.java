@@ -32,7 +32,7 @@ public class Main {
             }
         }
 
-        for(int i=rainidx+1;i<n;i++){
+        for(int i=0;i<n;i++){
             if(predict1[i].weather.equals("Rain") && predict1[i].date.compareTo(predict1[rainidx].date)<0){
                 rainidx = i;
                 break;
